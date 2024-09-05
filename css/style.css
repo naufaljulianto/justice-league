@@ -1,0 +1,322 @@
+/* Font */
+@font-face {
+  font-family: "Justice";
+  src: url(../fonts/justice-5azv-webfont.woff) format("woff");
+}
+
+/* Style Utama*/
+body {
+  font: 18px/38px "Justice", "Arial Narrow", arial, sans-serif;
+  background-image: url(../img/juctice-league.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  margin: 50px 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.container {
+  width: 1001px;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.superman-li {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 4px solid blue;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.batman-li {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 4px solid rgb(51, 51, 51);
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.aquaman-li {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 4px solid aquamarine;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.green-lantern-li {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 4px solid green;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.cyborg-li {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 4px solid rgb(158, 158, 158);
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.flash-li {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 4px solid yellow;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.wonder-women-li {
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border: 4px solid red;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+
+.gallery li,
+.gallery li a img,
+.gallery li span {
+  border-radius: 50%;
+}
+
+.green-lantern,
+.wonder-women {
+  font-size: 14px;
+}
+
+.superman {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(90, 90, 90, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: blue;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+  transition: 0.3s;
+  transform: scale(0) rotate(0);
+}
+.batman {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(90, 90, 90, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: rgb(51, 51, 51);
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+  transition: 0.3s;
+  transform: scale(0) rotate(0);
+}
+.green-lantern {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(90, 90, 90, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: green;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+  transition: 0.3s;
+  transform: scale(0) rotate(0);
+}
+.cyborg {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(90, 90, 90, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: rgb(158, 158, 158);
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+  transition: 0.3s;
+  transform: scale(0) rotate(0);
+}
+.aquaman {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(90, 90, 90, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: aquamarine;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+  transition: 0.3s;
+  transform: scale(0) rotate(0);
+}
+.flash {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(90, 90, 90, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: yellow;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+  transition: 0.3s;
+  transform: scale(0) rotate(0);
+}
+.wonder-women {
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(90, 90, 90, 0.5);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  line-height: 120px;
+  color: red;
+  text-shadow: 1px 1px 1px black;
+  opacity: 0;
+  transition: 0.3s;
+  transform: scale(0) rotate(0);
+}
+
+.gallery li a:hover span {
+  opacity: 1;
+  transform: scale(1) rotate(360deg);
+}
+
+.clear {
+  clear: both;
+}
+
+/*Overlay*/
+.overlay {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 9999;
+  transition: 0.5s;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.overlay img {
+  max-height: 100%;
+  box-shadow: 2px 2px 7px black;
+}
+
+.overlay:target img {
+  animation: zoomAndFade 0.5s;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  left: 842px;
+  color: white;
+  font-family: arial;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.overlay:target .close {
+  animation: slideDownFade 0.5s 0.5s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev {
+  animation: fadeAjah 0.5s 0.5s forwards;
+}
+
+/*Navigasi*/
+.next,
+.prev {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/next-icon.png);
+  position: absolute;
+  text-indent: -9999px;
+  margin-left: 5px;
+  top: 45%;
+  opacity: 0;
+}
+.prev {
+  background-image: url(../img/previous-icon.png);
+  margin-left: -35px;
+}
+
+/*Animasi next dan prev*/
+@keyframes fadeAjah {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*Animasi gambar full*/
+@keyframes zoomAndFade {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*Animasi Close*/
+@keyframes slideDownFade {
+  0% {
+    margin-top: -10px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
